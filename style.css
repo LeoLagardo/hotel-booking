@@ -1,0 +1,185 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F3F3F3;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+header {
+	height: 10vh;
+	background-color: rgb(0, 55, 128);
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.nav-links,
+.log-reg {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	cursor: pointer;
+}
+
+.log-reg {
+	display: flex;
+}
+
+li {
+	list-style: none;
+	margin-left: 30px;
+}
+
+.login-modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.register-modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.login-content {
+	width: 550px;
+	height: 400px;
+	background-color: white;
+	text-align: center;
+	border-radius: 4px;
+	position: relative;
+}
+
+.register-content {
+	width: 600px;
+	height: 550px;
+	background-color: white;
+	text-align: center;
+	border-radius: 4px;
+	position: relative;
+}
+
+.panel-heading {
+	margin-top: 15px;
+}
+
+.close-login,
+.close-register {
+	position: absolute;
+	top: 0;
+	right: 18px;
+	font-size: 35px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.panel-heading a {
+	text-decoration: none;
+	color: black;
+
+}
+
+
+.active{
+	padding-bottom: 15px;
+	border-bottom: 5px solid #004675;
+}
+
+.panel-body {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#login-form button,
+#register-form button {
+	width: 200px;
+	background-color: #004675;
+}
+
+.state {
+	background-color: blueviolet;
+}
+
+.container {
+	margin-top: 3%;
+}
+
+.first-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.box1,
+.box2,
+.box3 {
+	width: 350px;
+	height: 250px;
+	background-color: blueviolet;
+}
+
+.row1 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.row1 img {
+	width: 350px;
+	height: 250px;
+	cursor: pointer;
+}
+
+#state,
+#date {
+	width: 170px;
+	height: 30px;
+	border: none;
+
+}
+
+#state,
+#date,
+.search input,
+button {
+	box-shadow: 1px 1px 10px grey;
+}
+
+#date {
+	margin-left: 20px;
+}
+
+.search input {
+	width: 200px;
+	height: 30px;
+	border: none;
+}
+
+.search button {
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-color: #004675;
+	color: white;
+}

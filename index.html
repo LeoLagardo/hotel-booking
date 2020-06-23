@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+
+    <title>IRSC</title>
+</head>
+
+<body>
+    <header>
+        <h3>LOGO</h3>
+
+
+        <ul class="nav-links">
+            <li>Hotels</li>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+        </ul>
+
+        <ul class="log-reg">
+            <li id="loginformOpen">Login</li>
+            <li id="registerformOpen">Register</li>
+        </ul>
+    </header>
+
+    <div class="login-modal">
+
+        <div class="login-content">
+            <div class="close close-login">+</div>
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="#">
+                            <h3 class="active" id="customer-login-form-link">CUSTOMER LOGIN</h3>
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="#">
+                            <h3 id="hotel-login-form-link">HOTEL LOGIN</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <form id="login-form" action="#" method="post" role="form" style="display: block;">
+
+                            <div class="form-group">
+                                <div class="text-left">
+                                    <label for="">USER ID/ Email</label>
+                                </div>
+                                <input type="text" name="username" id="username" tabindex="1" class="form-control"
+                                    value="">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="text-left">
+                                    <label for="">Password</label>
+                                </div>
+                                <input type="text" name="username" id="username" tabindex="1" class="form-control"
+                                    value="">
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="text-left">
+                                            <a href="#" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group text-left">
+                                <button class="btn btn-info">Login</button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 text-left">
+                                    Dont have an accout yet? Register now (<a>Customer</a>/<a>Hotel</a>)
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Register-->
+    <div class="register-modal">
+
+        <div class="register-content">
+            <div class="close close-register">+</div>
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="#" >
+                            <h3 class="active" id="customer-register-form-link">CUSTOMER REGISTER</h3>
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="#" >
+                            <h3 id="hotel-register-form-link">HOTEL REGISTER</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <form id="register-form" action="#" method="post" role="form" style="display: block;">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="text-left">
+                                            <label for="">First Name</label>
+                                        </div>
+                                        <input type="text" name="firstname" id="username" tabindex="1"
+                                            class="form-control" value="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="text-left">
+                                            <label for="">Last Name</label>
+                                        </div>
+                                        <input type="text" name=lastname" id="username" tabindex="1"
+                                            class="form-control" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="text-left">
+                                    <label for="">Email Address</label>
+                                </div>
+                                <input type="email" name="email" id="email" tabindex="1" class="form-control" value="">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="text-left">
+                                    <label for="">Password</label>
+                                </div>
+                                <input type="password" name="username" id="username" tabindex="1" class="form-control"
+                                    value="">
+                            </div>
+                            <div class="form-group">
+                                <div class="text-left">
+                                    <label for="">Confirm Password</label>
+                                </div>
+                                <input type="password" name="username" id="username" tabindex="1" class="form-control"
+                                    value="">
+                            </div>
+
+                            <div class="form-group text-left">
+                                <button class="btn btn-info">Register</button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 text-left">
+                                    Already have an account? Login here (<a>Customer</a>/<a>Hotel</a>)
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="first-row">
+            <div class="state-date">
+                <select id="state" name="state">
+                    <option value="">State</option>
+                    <option value="">Karnataka</option>
+                    <option value="">Tamil Nadu</option>
+                    <option value="">Maharashtra</option>
+                </select>
+
+                <select id="date" type="date" name="state">
+                    <option value="">Available date</option>
+                </select>
+            </div>
+
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="Search.." name="search2">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+
+
+        </div>
+
+        <div class="hotels">
+            <div class="row1">
+                <div class="box1"><img src="./hotel_pic.png"></div>
+                <div class="box1"><img src="./hotel_pic.png"></div>
+                <div class="box1"><img src="./hotel_pic.png"></div>
+            </div>
+
+            <div class="row1">
+                <div class="box1"><img src="./hotel_pic.png"></div>
+                <div class="box1"><img src="./hotel_pic.png"></div>
+                <div class="box1"><img src="./hotel_pic.png"></div>
+            </div>
+
+            <div class="row1">
+                <div class="box1"><img src="./hotel_pic.png"></div>
+                <div class="box1"><img src="./hotel_pic.png"></div>
+                <div class="box1"><img src="./hotel_pic.png"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
